@@ -1,0 +1,14 @@
+---
+ 
+apiVersion: networking.k8s.io/v1beta1
+kind: Ingress
+metadata:
+  name: homework-ingress
+spec:
+  rules:
+  - host: homework.svc.k8s.muc1tes.financial.com
+    http:
+      paths:
+      - backend:
+          serviceName: homework-svc
+          servicePort: 80
