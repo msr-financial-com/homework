@@ -23,7 +23,7 @@ for i in deployments.items:
 print("LISTING SERVICES")
 services = v1.list_namespaced_service("dev-ngp")
 for i in services.items:
-    print(i.metadata.name)
+    print(i.metadata.name, i.metadata.service_)
 
 # Get all ingresses
 print("LISTING INGRESSES")
