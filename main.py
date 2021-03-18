@@ -30,3 +30,5 @@ print("LISTING INGRESSES")
 services = v2.list_namespaced_ingress("dev-ngp")
 for i in services.items:
     print(i.metadata.name)
+
+print("test")
